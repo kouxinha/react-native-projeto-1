@@ -8,4 +8,5 @@ const ShareVariant = (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttribu
       fill = { props.color } />
   </Svg>
 );
+
 export default ShareVariant;

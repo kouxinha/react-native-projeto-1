@@ -24,11 +24,10 @@ export default function Form() {
       dispatch(setHeight(height));
       dispatch(setWeight(weight));
       dispatch(setIMC(imc, 'Índice de Massa Corpórea'));
-      console.log(imcState);
+      
       setIMCResult(imc);
-      console.log(imcState);
     } else {
-      Vibration.vibrate();
+      Vibration.vibrate(200);
       dispatch(setIMC('', 'Revise os valores!'));
     }
 
